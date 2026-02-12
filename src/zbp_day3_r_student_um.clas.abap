@@ -1,0 +1,5 @@
+CLASS zbp_day3_r_student_um DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zday3_r_student_um.
+ENDCLASS.
+
+CLASS zbp_day3_r_student_um IMPLEMENTATION.
+ENDCLASS.

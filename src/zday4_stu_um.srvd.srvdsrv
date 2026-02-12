@@ -1,0 +1,4 @@
+@EndUserText.label: '.'
+define service Zday4_stu_um {
+  expose ZDAY3_C_STUDENT_UM as Students;
+}

@@ -1,0 +1,37 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZDAY3_C_STUDENT_UM with
+{
+  @UI.facet: [{ id: 'Student', type: #IDENTIFICATION_REFERENCE, purpose: #STANDARD, label: 'Student', position: 10  }]
+//  @UI.hidden: true
+@UI.lineItem: [{label: 'ID', position: 10  }]
+  @UI.identification: [{ label: 'ID', position: 10 }]
+  Id;
+  @UI.lineItem: [{label: 'Name', position: 20  },
+                 { type: #FOR_ACTION, dataAction: 'setStatus', label: 'Set Status', position: 10 },
+                 { type: #FOR_ACTION, dataAction: 'copy', label: 'Copy', position: 10 },
+                 { type: #FOR_ACTION, dataAction: 'copyFromTemplate', label: 'Copy From Template', position: 10 },
+                { type: #FOR_ACTION, dataAction: 'upload', label: 'Upload', position: 10 }
+                
+                
+                ]
+  @UI.identification: [{ label: 'Name', position: 20  }]
+  Name;
+  @UI.lineItem: [{label: 'Location', position: 30  }]
+  @UI.identification: [{ label: 'Location', position: 30 }]
+  Location;
+  @UI.lineItem: [{label: 'Course', position: 40  }]
+  @UI.identification: [{ label: 'Course', position: 40  }]
+  Course;
+  @UI.lineItem: [{label: 'Status', position: 50  }]
+  @UI.identification: [{ label: 'Status', position: 50 }]
+  Status;
+  @UI.hidden: true
+  Lastchangedat;
+  @UI.hidden: true
+  Locallastchangedat;
+  @UI.hidden: true
+  Createdby;
+  @UI.hidden: true
+  Changedby;
+
+}

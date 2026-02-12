@@ -1,0 +1,11 @@
+extension implementation in class zbp_day3_r_student_ex_p unique;
+
+extend behavior for ZDAY3_R_STUDENT_ex
+
+{
+validation zzchecklocation on save {create;}
+
+extend draft determine action Prepare{
+validation zzchecklocation;
+}
+}

@@ -1,0 +1,26 @@
+managed implementation in class zbp_day3_r_student_ex unique;
+strict ( 2 );
+with draft;
+extensible{
+with determinations on save;
+with validations on save;
+}
+define behavior for ZDAY3_R_STUDENT_ex //alias <alias_name>
+persistent table zsprap_student
+draft table zsprap_e_student
+lock master
+total etag Lastchangedat
+authorization master ( instance )
+etag master Locallastchangedat
+extensible
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly, numbering : managed ) Id;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare extensible;
+}

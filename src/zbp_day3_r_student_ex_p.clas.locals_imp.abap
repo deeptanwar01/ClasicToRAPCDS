@@ -1,0 +1,14 @@
+CLASS lhc_ZDAY3_R_STUDENT_ex DEFINITION INHERITING FROM cl_abap_behavior_handler.
+  PRIVATE SECTION.
+
+    METHODS zzchecklocation FOR VALIDATE ON SAVE
+      IMPORTING keys FOR ZDAY3_R_STUDENT_ex~zzchecklocation.
+
+ENDCLASS.
+
+CLASS lhc_ZDAY3_R_STUDENT_ex IMPLEMENTATION.
+
+  METHOD zzchecklocation.
+  ENDMETHOD.
+
+ENDCLASS.

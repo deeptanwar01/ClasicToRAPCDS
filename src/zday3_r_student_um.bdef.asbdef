@@ -1,0 +1,27 @@
+unmanaged implementation in class zbp_day3_r_student_um1 unique;
+strict ( 2 );
+with draft;
+define behavior for ZDAY3_R_STUDENT_UM alias Students
+draft table ZDAY3_STUDENT_DR
+early numbering
+//late numbering
+lock master
+total etag Lastchangedat
+authorization master ( instance, global )
+etag master Locallastchangedat
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Id;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+  action(features : instance) setStatus parameter zday3_abe result[1] $self;
+  static action upload;
+  factory action copy[1];
+  static factory action copyFromTemplate[1];
+  internal action resetStatus;
+}

@@ -1,5 +1,13 @@
-CLASS zbp_day3_r_student_um1 DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zday3_r_student_um.
+class ZBP_DAY3_R_STUDENT_UM1 definition
+  public
+  create private .
+
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zbp_day3_r_student_um1 IMPLEMENTATION.
+
+
+CLASS ZBP_DAY3_R_STUDENT_UM1 IMPLEMENTATION.
 ENDCLASS.
